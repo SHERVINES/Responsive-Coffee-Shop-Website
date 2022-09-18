@@ -16,6 +16,7 @@
   outline: none;
   border: none;
   transition: 0.2s linear;
+  text-transform: capitalize;
 }
 html {
   font-size: 62.5%;
@@ -38,6 +39,18 @@ body {
 }
 section {
   padding: 2rem 7%;
+}
+.heading {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+.heading span{
+  color: var(--main-color);
+  text-transform: uppercase;
+
 }
 .btn {
   display: inline-block;
@@ -190,6 +203,34 @@ section {
   font-weight: lighter;
   padding: 1rem 0;
 }
+.about .row{
+  display: flex;
+  align-items: center;
+  background-color: var(--black);
+  flex-wrap: wrap;
+}
+.about .row .image{
+  flex: 1 1 45rem;
+}
+.about .row img{
+width: 100%;
+}
+.about .row .content{
+  flex: 1 1 45rem;
+  padding: 2rem;
+}
+
+.about .row .content h3{
+  font-size: 3rem;
+  color: #fff;
+}
+.about .row .content p{
+  font-size: 1.6rem;
+  color: #ccc;
+  line-height: 1.8;
+  padding: 1rem 0;
+}
+
 
 /* media queries */
 @media (max-width: 991px) {
@@ -199,9 +240,10 @@ section {
   .header {
     padding: 1.5rem 2rem;
   }
-}
+
 section {
   padding: 2rem;
+}
 }
 @media (max-width: 768px) {
   #menu-btn {
@@ -229,7 +271,7 @@ section {
   .header .search-from {
     width: 90%;
     right: 2rem;
-  }
+  
 }
 .home {
   background-position: left;
@@ -241,6 +283,7 @@ section {
 }
 .home .content p {
   font-size: 1.5rem;
+}
 }
 @media (max-width: 450px) {
   html {
