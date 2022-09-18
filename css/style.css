@@ -47,10 +47,9 @@ section {
   padding-bottom: 3.5rem;
   font-size: 4rem;
 }
-.heading span{
+.heading span {
   color: var(--main-color);
   text-transform: uppercase;
-
 }
 .btn {
   display: inline-block;
@@ -203,34 +202,67 @@ section {
   font-weight: lighter;
   padding: 1rem 0;
 }
-.about .row{
+.about .row {
   display: flex;
   align-items: center;
   background-color: var(--black);
   flex-wrap: wrap;
 }
-.about .row .image{
+.about .row .image {
   flex: 1 1 45rem;
 }
-.about .row img{
-width: 100%;
+.about .row img {
+  width: 100%;
 }
-.about .row .content{
+.about .row .content {
   flex: 1 1 45rem;
   padding: 2rem;
 }
 
-.about .row .content h3{
+.about .row .content h3 {
   font-size: 3rem;
   color: #fff;
 }
-.about .row .content p{
+.about .row .content p {
   font-size: 1.6rem;
   color: #ccc;
   line-height: 1.8;
   padding: 1rem 0;
 }
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.menu .box-container .box {
+  border: var(--border);
+  padding: 5rem;
+  text-align: center;
+}
+.menu .box-container .box img {
+  height: 10rem;
+}
+.menu .box-container .box h3 {
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
 
+.menu .box-container .box .price {
+  color: #fff;
+  font-size: 2.5rem;
+  padding: 5rem 0;
+}
+.menu .box-container .box .price span {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+.menu .box-container .box:hover {
+  background-color: #fff;
+}
+.menu .box-container .box:hover > * {
+  color: var(--black);
+}
 
 /* media queries */
 @media (max-width: 991px) {
@@ -241,9 +273,9 @@ width: 100%;
     padding: 1.5rem 2rem;
   }
 
-section {
-  padding: 2rem;
-}
+  section {
+    padding: 2rem;
+  }
 }
 @media (max-width: 768px) {
   #menu-btn {
@@ -271,19 +303,18 @@ section {
   .header .search-from {
     width: 90%;
     right: 2rem;
-  
-}
-.home {
-  background-position: left;
-  justify-content: center;
-  text-align: center;
-}
-.home .content h3 {
-  font-size: 4.5rem;
-}
-.home .content p {
-  font-size: 1.5rem;
-}
+  }
+  .home {
+    background-position: left;
+    justify-content: center;
+    text-align: center;
+  }
+  .home .content h3 {
+    font-size: 4.5rem;
+  }
+  .home .content p {
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 450px) {
   html {
