@@ -28,9 +28,9 @@ html::-webkit-scrollbar {
   width: 0.8rem;
 }
 html::-webkit-scrollbar-track {
-  background: transparent;
+background: transparent;
 }
-html::-webkit-slider-thumb {
+html::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 5rem;
 }
@@ -443,8 +443,53 @@ section {
   color: #ccc;
   padding: 1rem 0;
 }
+.footer {
+  background: var(--black);
+  text-align: center;
+}
+.footer .share {
+  padding: 1rem 0;
+}
+.footer .share a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  color: #fff;
+  border: var(--border);
+  margin: 3rem;
+  border-radius: 50%;
+}
+.footer .share a:hover {
+  color: var(--main-color);
+}
 
-
+.footer .links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+.footer .links a {
+  color: #fff;
+  border: var(--border);
+  padding: .7rem 2rem;
+  font-size: 2rem;
+}
+.footer .links a:hover{
+    background-color: var(--main-color);
+} 
+.footer .credit{
+  font-size: 2rem;
+  color: #fff;
+  font-weight: lighter;
+  padding: 1.5rem;
+}
+.footer .credit span {
+  color: var(--main-color);
+font-weight: bold;
+}
 /* media queries */
 @media (max-width: 991px) {
   html {
